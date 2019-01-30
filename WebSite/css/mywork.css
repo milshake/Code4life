@@ -1,0 +1,111 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --bg1: rgba(0, 255, 203, 1);
+  --background: rgba(0, 214, 170, 1);
+}
+
+h1 {
+  font-weight: 400;
+}
+
+/* This index css style sheet file */
+.home, #home {
+  padding-top: 100px;
+  background-color: #191919;
+  height: 100%;
+}
+
+.mywork {
+  color: white;
+  /* background-color: var(--background1); */
+  padding: 50px 20px;
+  text-align: center;
+  word-break:break-all;
+}
+
+.mywork hr {
+  border: 0;
+  height: 1px;
+  background-color: white;
+}
+
+.infocontainer hr {
+  border: 0;
+  height: 1px;
+  background-color: white;
+}
+
+.mywork h1 {
+  letter-spacing: 7px;
+  animation: anim 3s linear infinite;
+}
+
+@keyframes anim {
+  0% {color: white;}
+    50%{color: var(--background);}
+  100{color: white;}
+}
+
+.mywork p {
+  margin-bottom: -22px;
+}
+
+/* this info container styling */
+.infocontainer, #infocontainer {
+  color: white;
+  width: 80%;
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+}
+.infocontainer ul {float: left;}
+.infocontainer ul li {float: left;}
+
+.infocontainer h1 {
+  letter-spacing: 3px;
+  color: #ee7259;
+}
+
+.software, .electronics, .comunity {
+  display: inline-block;
+  margin: 0 0 0 0;
+  padding-right: 50px;
+}
+.software h1, .electronics h1, .comunity h1 {
+  border: 1px solid var(--background);
+  padding: 12px;
+  border-radius: 35px;
+  transition: 500ms ease-in-out;
+}
+
+.software h1:hover, .electronics h1:hover, .comunity h1:hover {
+  background-color: var(--background);
+  border-color: var(--background);
+  color: white;
+}
+
+.software{margin-top: 5%;}
+.comunity {margin-bottom: 7%;}
+
+
+/* This is for targetting the a hove */
+a { color: var(--background);}
+a:hover {color: var(--bg1);}
+
+
+@media screen and (min-width: 800px) {
+  .mywork {
+    padding: 50px 90px 50px 90px;
+  }
+  .software, .electronics, .comunity {margin-right: 40px;}
+  .software ul li {margin-left: -11px;}
+
+  .software ul {
+    padding-left: 50px;
+  }
+}
